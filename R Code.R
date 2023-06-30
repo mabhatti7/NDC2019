@@ -250,7 +250,7 @@ cat("Accuracy:", accuracy, "\n")
 
 
 install.packages("randomForest")
-# Load the required library
+library(caTools)
 library(randomForest)
 
 # Split the dataset into training and testing sets (70% training, 30% testing)
@@ -268,6 +268,9 @@ predictions <- predict(model, newdata = test_data)
 # Calculate the accuracy of the model
 accuracy <- mean(predictions == test_data$C_SEV)
 cat("Accuracy:", accuracy, "\n")
+
+
+
 
 
 
