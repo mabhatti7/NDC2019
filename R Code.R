@@ -279,10 +279,13 @@ library(cluster)
 library(factoextra)
 
 # Select the relevant variables for clustering
-selected_vars <- c("C_VEHS", "V_TYPE", "V_YEAR", "P_SEX", "P_AGE")
+selected_vars <- c("C_VEHS", "V_YEAR")
 
 # Subset the dataset with the selected variables
 data <- dataset_extended[selected_vars]
+
+# Convert selected variables to numeric
+data <- sapply(data, as.numeric)
 
 # Standardize the data
 scaled_data <- scale(data)
@@ -306,7 +309,6 @@ fviz_cluster(kmeans_model, data = scaled_data)
 
 # Access the cluster assignments
 cluster_labels <- kmeans_model$cluster
-
 
 
 # Provide the file path and name for the CSV file
