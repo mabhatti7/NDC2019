@@ -27,5 +27,6 @@ Clustering techniques can be employed to group vulnerable road users based on si
 Predictive modeling can be used to understand the factors that contribute to collisions involving vulnerable road users. By building predictive models, you can identify the variables (characteristics) that are most strongly associated with collisions. Techniques such as logistic regression or decision trees can be employed to predict the likelihood of collisions based on the characteristics of vulnerable road users.  Run code from "R Code.R"  line 225 to 249.
 
 Classification techniques can help classify vulnerable road users into different groups based on their characteristics and collision involvement. For instance, you can use a machine learning algorithm like Random Forest or Support Vector Machines to classify road users as high-risk or low-risk based on their demographic attributes, transportation mode, and other relevant variables. Run code from "R Code.R"  line 252 to 270.
+
 For Data Pre-Processing secition see Pre data.Rmd and the knit result can be seen in Pre data.html.
 For exploratory data analysis see Association.Rmd and the knit result can be seen in Association.html.
