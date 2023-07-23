@@ -107,7 +107,7 @@ print(category_counts)
 
 ```{r}
 # Convert all variables to categorical
-dataset <- subset(dataset, select = -c(C_CASE, C_YEAR, V_ID, P_ID, C_SEV))
+dataset <- subset(dataset, select = -c(C_CASE, C_YEAR, V_ID, P_ID, C_SEV,P_USER))
 dataset[] <- lapply(dataset, as.factor)                        
 str(dataset)
 ```
@@ -145,5 +145,8 @@ association_rules <- apriori(dataset_transactions, parameter = list(support = 0.
 
 # View the association rules
 inspect(association_rules)
+```
+```{r}
+
 ```
 
